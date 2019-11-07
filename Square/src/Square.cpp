@@ -49,25 +49,17 @@ int main() {
 			}
 		}
 
-		if (groupSum == 33 && numInGroup == 4) {
-			tally4++;
+		if (groupSum == 33) {
+			if (numInGroup == 4){
+					tally4++;
+			}
+			tally33++;
 		}
-	}
+	} // end for loop going through each combination
 
-	cout << "tally4; " << tally4 << endl;
+	cout << "tally4: " << tally4 << endl;
+	cout << "tally33: " << tally33 << endl;
 
-	// TODO !!! binary lists > actual numbers
-
-	// TODO total of the numbers in each set
-
-	/*Part A&B TODO
-	 * if (total == sum){
-	 * 	if (amountOfNumbers == 4){
-	 * 		 tally4++;
-	 * 	}
-	 * 	tally33++;
-	 * }
-	 */
 
 	/* Part C TODO
 	 * some way to track all the sums & corresponding tally [0,total of all] A large 2d array?
