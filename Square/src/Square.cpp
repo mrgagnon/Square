@@ -10,15 +10,15 @@ using namespace std;
 int main() {
 	int arr[16] = {1,14,14,4,11,7,6,9,8,10,10,5,13,2,3,15}; // initializing square
 	int tallies[133] = {0};
-	int sum = 33; // some of the rows etc
+	int sum = 33; // sum of the rows/cols/etc
 	int tally4 = 0;
 	int tally33 = 0;
 	//total sum of the square 132
 
 	//creating the combinations
 	int n = 16;
-	vector<string> arrGroups;
-		arrGroups.push_back("0");
+	vector<string> arrGroups; // stores all combinations
+		arrGroups.push_back("0"); // starting orientation
 		arrGroups.push_back("1");
 
 		int i;
@@ -57,8 +57,8 @@ int main() {
 	} // end for loop going through each combination
 
 	//printing results
-	cout << "Num combinations =33 & 4 elements: " << tally4 << endl;
-	cout << "Num combinations =33: " << tally33 << endl;
+	cout << "Num combinations equal to 33 with four elements: " << tally4 << endl;
+	cout << "Num combinations equal to 33: " << tally33 << endl;
 
 	for (int i = 0; i <= 132; i++){
 		cout << tallies[i] << " Number of combinations equal to " << i << endl;
